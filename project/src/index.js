@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app/app';
+import {PROMO_FILM, FILMS} from './mock.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App promoFilm={PROMO_FILM} films={FILMS}/>
   </React.StrictMode>,
   document.getElementById('root'));
